@@ -11,7 +11,6 @@ export function sleep(ms: number): Promise<void> {
 }
 
 const cloudWatchClient = new CloudWatchClient('eu-west-1');
-cloudWatchClient.logLeaseRunningOut();
 
 const pageThreshold: number = +process.env.PAGE_THRESHOLD!;
 async function main() {
